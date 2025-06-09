@@ -1,0 +1,14 @@
+{
+  "friendlyName": "App title",
+  "code": {
+    "fileName": "index.js",
+    "mountFunctionName": "mount",
+    "unmountFunctionName": "unmount",
+    "icon": "icon.svg",
+    "options": [],
+    "moreOptions": [],
+    "i18n": {
+      "translationsPath": "locales"
+    }
+  }
+}

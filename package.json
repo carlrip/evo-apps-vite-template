@@ -1,0 +1,9 @@
+{
+  "name": "tbcaccess-app-vite-template",
+  "version": "0.0.1",
+  "description": "Vite template for a React access app",
+  "type": "template",
+  "files": [
+    "template"
+  ]
+}
