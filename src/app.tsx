@@ -9,6 +9,7 @@ function App({
   hostContext: Record<string, unknown>;
   appContext: Record<string, unknown>;
 }) {
+  console.log(hostContext, appContext);
   const [count, setCount] = useState(0);
   const { t } = useTranslation();
   return (

@@ -2,7 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { I18nextProvider } from "react-i18next";
 import { mountInit } from "tbcaccess-apps-react-helpers";
-import App from "./App.tsx";
+import App from "./app.tsx";
 
 const initResult = await mountInit({
   metaData: {
