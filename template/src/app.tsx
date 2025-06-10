@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { useAppOption } from "tbcaccess-apps-react-helpers";
 import "./app.css";
 
 function App({
@@ -12,6 +13,10 @@ function App({
   console.log(hostContext, appContext);
   const [count, setCount] = useState(0);
   const { t } = useTranslation();
+  useAppOption((name) => {
+    console.log(`option ${name} clicked`);
+  });
+
   return (
     <div className="container">
       <h3 className="access-h3">{t("hello")}</h3>

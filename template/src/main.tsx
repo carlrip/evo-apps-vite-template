@@ -4,6 +4,7 @@ import { I18nextProvider } from "react-i18next";
 import { mountInit } from "tbcaccess-apps-react-helpers";
 import App from "./app.tsx";
 
+const rootElement = document.getElementById("root")!;
 const initResult = await mountInit({
   metaData: {
     code: {
@@ -12,8 +13,9 @@ const initResult = await mountInit({
     },
   },
   defaultLanguage: "en-GB",
+  rootElement,
 });
-createRoot(document.getElementById("root")!).render(
+createRoot(rootElement).render(
   <StrictMode>
     {initResult.i18n ? (
       <I18nextProvider i18n={initResult.i18n}>

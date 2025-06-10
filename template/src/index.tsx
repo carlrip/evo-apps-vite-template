@@ -22,7 +22,11 @@ export async function mount({
   };
   defaultLanguage: string;
 }) {
-  const initResult = await mountInit({ metaData, defaultLanguage });
+  const initResult = await mountInit({
+    metaData,
+    defaultLanguage,
+    rootElement,
+  });
   cleanup = initResult.cleanup;
   reactRoot = createRoot(rootElement);
   reactRoot.render(
@@ -36,6 +40,7 @@ export async function mount({
       )}
     </StrictMode>
   );
+  return { translate: (key: string) => initResult.i18n?.t(key) };
 }
 
 export function unmount() {

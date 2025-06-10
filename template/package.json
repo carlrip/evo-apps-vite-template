@@ -17,7 +17,7 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-i18next": "^15.5.2",
-    "tbcaccess-apps-react-helpers": "^0.0.6"
+    "tbcaccess-apps-react-helpers": "latest"
   },
   "devDependencies": {
     "@eslint/js": "^9.22.0",
@@ -29,8 +29,7 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^16.0.0",
-    "tbcaccess-app-vite": "^0.0.8",
-    "tbcaccess-apps-publish": "^0.0.13",
+    "tbcaccess-app-vite": "latest",
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.26.1",
     "vite": "^6.3.1"
