@@ -1,4 +1,5 @@
 {
   "hello": "Salut evo",
-  "count": "Numărul este {{count}}"
+  "count": "Numărul este {{count}}",
+  "appTitle": "O aplicație evo"
 }
