@@ -1,0 +1,5 @@
+{
+  "hello": "Hello evo",
+  "count": "Count is {{count}}",
+  "appTitle": "An evo app"
+}

@@ -1,6 +1,6 @@
 {
   "name": "tbc-create-access-app",
-  "version": "0.0.7",
+  "version": "0.0.13",
   "description": "Scaffold a React+TypeScript Vite evo app ",
   "main": "index.js",
   "bin": {
@@ -9,7 +9,8 @@
   "type": "module",
   "files": [
     "index.js",
-    "template"
+    "template-advanced",
+    "template-basic"
   ],
   "scripts": {
     "start": "node index.js"

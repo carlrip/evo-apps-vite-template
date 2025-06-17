@@ -5,15 +5,26 @@ import { dirname, resolve } from "path";
 import { fileURLToPath } from "url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const templateDir = resolve(__dirname, "template");
 
 if (!process.argv[2]) {
   console.error("Error: app name is required");
-  console.error("Usage: npx evo-apps-vite-template <app-name>");
+  console.error("Usage: npx evo-apps-vite-template <app-name> [template-name]");
+  console.error("Available templates: basic (default), advanced");
   process.exit(1);
 }
 
 const appName = process.argv[2];
+const templateName = process.argv[3] || "basic";
+
+// Validate template name
+const validTemplates = ["basic", "advanced"];
+if (!validTemplates.includes(templateName)) {
+  console.error("Error: Invalid template name");
+  console.error(`Available templates: ${validTemplates.join(", ")}`);
+  process.exit(1);
+}
+
+const templateDir = resolve(__dirname, `template-${templateName}`);
 
 // Validate app name for folder name compatibility
 const isValidFolderName = (name) => {

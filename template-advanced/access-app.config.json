@@ -5,6 +5,7 @@
     "mountFunctionName": "mount",
     "unmountFunctionName": "unmount",
     "icon": "icon.svg",
+    "styles": ["style.css"],
     "options": [],
     "moreOptions": [],
     "i18n": {
