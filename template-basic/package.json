@@ -17,10 +17,10 @@
   },
   "dependencies": {
     "i18next": "^25.2.1",
+    "lucide-react": "^0.515.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-i18next": "^15.5.2",
-    "tbcaccess-apps-react-helpers": "latest"
+    "react-i18next": "^15.5.2"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^4.0.0",

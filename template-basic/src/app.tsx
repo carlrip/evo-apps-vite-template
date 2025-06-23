@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { useAppOption } from "tbcaccess-apps-react-helpers";
+import { useAppOption } from "./use-app-option";
 import "./app.css";
 
 function App({
